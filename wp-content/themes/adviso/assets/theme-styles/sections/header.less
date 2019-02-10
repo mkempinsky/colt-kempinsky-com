@@ -1,0 +1,125 @@
+/* ---------- Header ------------- */
+
+.home #masthead {
+	height: 100vh;
+}
+
+#masthead {
+  position: relative;
+  z-index: 90;
+  background: @background;
+  clear: both;
+  height: 450px;
+  .header-text {
+	  text-align: center;
+	  font-size: 40px;
+	  color: black;
+	  font-weight: 300;
+	  line-height: 1.5em;
+	  margin-top: 5%;
+	  white-space: pre-line;
+	  @media screen and (max-width: 768px) {
+		  font-size: 28px;
+	  }
+  }
+  .header-cta {
+	  text-align: center;
+	  margin-top: 4%;
+	  a {
+		  background: @s-accent;
+		  color: @background;
+		  padding: 18px 24px;
+		  border-radius: 26px;
+	  }
+  }
+  #top-bar {
+    padding: 10px 0;
+    background: rgba(0,0,0,.2);
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: space-around;
+    body.home & {
+	    background: transparent;
+    }
+    @media screen and (max-width: 767px) {
+	    padding: 25px 0;
+    }
+    .container {
+	    display: flex;
+	    flex-direction: row;
+	    align-items: center;
+    }
+  }
+  .site-branding {
+    overflow: hidden;
+    display: inline-block;
+    #text-title-desc {
+      clear: none;
+      @media screen and (max-width: 767px) {
+        float: none;
+      }
+      vertical-align: middle;
+    }
+    @media screen and (max-width: 767px) {
+      text-align: center;
+      float: none;
+      padding-bottom: 5px;
+    }
+  }
+  h1.site-title {
+    font-size: 40px;
+    margin: 0px;
+  }
+  h2.site-description {
+    font-size: 17px;
+    margin: 0px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    .body-font;
+  }
+
+  #searchicon {
+    background: #eee;
+    border: solid 2px #ddd;
+    padding-top: 6px;
+    padding-bottom: 4px;
+  }
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+  #site-logo {
+    display: inline-block;
+    max-width: 200px;
+    max-height: 200px;
+    text-align: center;
+    float: none;
+    img {
+      width: auto;
+      max-height: 100px;
+    }
+    @media screen and (max-width: 767px) {
+      float: none;
+    }
+  }
+}
+
+#adviso-search {
+	text-align: center;
+	margin: auto 8px;
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
+	#search-icon {
+		background: none;
+		box-shadow: none;
+		border: 0px;
+		padding: 0px;
+		outline: none;
+		font-size: 20px;
+		text-shadow: none;
+		color: @onaccent;
+		outline: none;
+	}
+}

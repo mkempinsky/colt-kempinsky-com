@@ -1,0 +1,78 @@
+/**
+ *
+ *	LESS Files for the Featured Categories Area
+ *
+**/
+
+#featured-categories {
+	#categories-container {
+		.category-wrapper {
+			height: 300px;
+			display: flex;
+			@media screen and (max-width: 991px) {
+				height: 200px;
+			}
+			.category-title {
+				width: 50%;
+				display: inline-block;
+				background: @content;
+				span {
+					color: white;
+					font-size: 36px;
+					display: inline-block;
+					float: right;
+					margin: 10% 5%;
+					@media screen and (max-width: 768px) {
+						font-size: 22px;
+					}
+				}
+			}
+			.category-thumbs {
+				width: 50%;
+				display: grid;
+				grid-template-columns: 50% 50%;
+				grid-template-rows: 50% 50%;
+				.grid-item {
+					position: relative;
+					overflow: hidden;
+					display: flex;
+					justify-content: center;
+					img {
+						width: 100%;
+						max-width: none;
+					}
+				}
+				.category-thumb-1 {
+					grid-column-start: 1;
+					grid-column-end: 2;
+					grid-row-start: 1;
+					grid-row-end: 3;
+					img {
+						height: 100%;
+						width: auto;
+					}
+				}
+				.category-thumb-2, .category-thumb-3 {
+					img {
+						align-self: center;
+					}
+					@media screen and (max-width: 600px) {
+						display: block;
+						img {
+							height: 100%;
+							width: auto;
+						}
+					}
+				}
+			}
+			&:nth-child(even) {
+				flex-direction: row-reverse;
+				.category-title {
+					span {
+						float: left;
+					}
+				}
+			}
+		}
+	}
+}

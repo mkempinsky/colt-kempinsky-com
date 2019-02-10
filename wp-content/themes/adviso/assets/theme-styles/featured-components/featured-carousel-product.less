@@ -1,0 +1,103 @@
+#featured-offers-product {
+	position: relative;
+/*
+  background: #efefef;
+  padding: 15px 0;
+*/
+  .fg-item-container {
+    padding: 10px;
+    .featured-thumb {
+      position: relative;
+    }
+    .out-thumb {
+	    width: 100%;
+	    .product-title {
+		    display: inline-block;
+		    width: 55%;
+		    overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+	    }
+	    span.price {
+		    float: right;
+		    color: darken(@accent, 30%);
+		    del {
+				color: darken(@accent, 20%);
+			}
+			ins {
+				background: transparent;
+			}
+	    }
+    }
+  }
+  h3 {
+    text-align: center;
+    color: @onaccent;
+    font-size: 34px;
+    margin: 5px 0;
+  }
+  .owl-stage-outer {
+    z-index: 99;
+  }
+}
+
+//This code will work for Post Carousel as well
+.featured-section-area .owl-theme {
+	.owl-nav {
+	    position: absolute;
+	    top: 30%;
+	    width: 100%;
+	    z-index: 99;
+	    .prev {
+	      float: left;
+	      left: -20px;
+	      background: @s-accent;
+	      font-size: 22px;
+	      text-shadow: none;
+	      color: white;
+	      position: relative;
+	      &:hover {
+		      box-shadow: 0 1px 1.5px 0 rgba(0,0,0,.12), 0 1px 1px 0 rgba(0,0,0,.24);
+	      }
+	    }
+	
+	    .next {
+	      float: right;
+	      right: -20px;
+	      background: @s-accent;
+	      font-size: 22px;
+	      text-shadow: none;
+	      color: white;
+	      position: relative;
+			&:hover {
+		      box-shadow: 0 1px 1.5px 0 rgba(0,0,0,.12), 0 1px 1px 0 rgba(0,0,0,.24);
+	      }
+	    }
+	  }
+	.owl-dots {
+	margin-top: 10px;
+		button {
+			background: none;
+			border: none;
+			box-shadow: none;
+			padding: 0px;
+			span {
+				border-radius: 0px;
+				height: 3px;
+				width: 30px;
+				background: @accent;
+				outline: none;
+				margin: auto 1px;
+				&:hover {
+					background: lighten(@accent, 10%);
+				}
+			}
+			&.active, &:focus, &:hover {
+				outline: none;
+				span {
+					background: darken(@sbg, 20%);
+				}
+			}
+		}
+	}
+}

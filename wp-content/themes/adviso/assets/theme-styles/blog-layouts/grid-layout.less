@@ -1,0 +1,147 @@
+.grid-row {
+  margin: 0;
+}
+
+/* Grid */
+.grid {
+	position: relative;
+  margin: 15px 0;
+  padding-left: 0;
+  padding-bottom: 17px;
+  border-bottom: solid 1px #eee;
+  overflow: auto;
+  @media screen and (max-width: 768px) {
+    border-bottom: none;
+  }
+  &:nth-last-child(2) {
+    border: none;
+  }
+
+  .featured-thumb {
+    overflow: hidden;
+    padding: 0;
+    img {
+	    width: 100%;
+    }
+  }
+  .out-thumb {
+	  display: flex;
+	  flex-direction: column;
+	  height: 100%;
+    header {
+	    padding: 0;
+	    a {
+		    color: #444;
+	    }
+    }
+    .postedon {
+	    padding: 14px 0px;
+	    font-weight: 700;
+	    a {
+	    	color: #666;
+	    }
+	    .author {
+		    float: right;
+	    }
+	  }
+    p {
+      color: #aaa;
+      line-height: 1.6em;
+      font-size: 14px;
+      letter-spacing: .04em;
+      p {
+        margin-top: 5px;
+      }
+    }
+  }
+  .readmore {
+	  	margin-top: auto;
+	    position: relative;
+	    a {
+		    color: #444;
+	    }
+	    &:before {
+		    content: "";
+		    background: @accent;
+		    position: absolute;
+		    height: 3px;
+		    width: 30%;
+		    left: 0;
+		    top: -10px;
+	    }
+    }
+}
+
+
+.grid_2_column {
+  padding: 0 2%;
+  width: 50%;
+  margin-bottom: 4em;
+  border-bottom: none;
+  float: left;
+  .featured-thumb {
+    overflow: hidden;
+    position: relative;
+    .postedon {
+	    position: absolute;
+	    padding: 3%;
+	    top: 0;
+		color: white;
+		background: rgba(0,0,0,.1);
+	  }
+  }
+   
+  .out-thumb {
+  	header {
+	    padding-left: 0;
+	    a {
+		    overflow: hidden;
+		    text-overflow: ellipsis;
+		    white-space: nowrap;
+		    color: #444;
+	    }
+    }
+    p {
+	    color: #aaa;
+	    padding-right: 10%;
+	    font-weight: 300;
+	    letter-spacing: .04em;
+    }
+    span.readmore {
+	    position: relative;
+	    a {
+		    color: #444;
+	    }
+	    &:before {
+		    content: "";
+		    background: @accent;
+		    position: absolute;
+		    height: 3px;
+		    width: 100%;
+		    left: 0;
+		    bottom: -10px;
+	    }
+    }
+  }
+}
+
+
+.grid_3_column {
+  &:nth-child(3n){
+    padding-left: 10px;
+  }
+  &:nth-child(3n+1){
+    padding-right: 10px;
+  }
+  &:nth-child(2n){
+    padding-left: 0px;
+  }
+  @media screen and (min-width: 768px) {
+    &:nth-of-type(odd) {
+      clear: none;
+    }
+    &:nth-of-type(3n+1) {
+      clear: left;
+    }
+  }
+}

@@ -1,0 +1,277 @@
+
+.widget_product_search {
+  input[type=search] {
+	  background: white;
+      border: solid 2px #eee;
+      border-radius: 0px;
+      padding: 15px 5px;
+      font-size: 15px;
+      outline: none;
+      width: 100%;
+  }
+  button {
+	  display: none;
+  }
+}
+ul.cart_list,
+ul.product_list_widget {
+list-style: none outside;
+padding: 0;
+margin: 0;
+
+li {
+    position: relative;
+    padding: 0 !important;
+  margin: 0;
+  margin-bottom: 25px;
+  list-style: none;
+  &:before {
+	  display: none !important;
+  }
+  a {
+    display: block;
+    font-weight: 700;
+  }
+
+  img {
+    float: left !important;
+    margin-left: 0px;
+    width: 30%;
+    margin-right: 16px;
+    height: auto;
+    box-shadow: none;
+  }
+  .amount {
+    font-size: 15px;
+    color: darken(@accent, 30%);
+  }
+  ins {
+      background: none;
+  }
+  a.remove {
+    display: inline-block;
+    position: absolute;
+    float: right;
+    background: transparent;
+  }
+  dl {
+    margin: 0;
+    padding-left: 1em;
+
+    dt,
+    dd {
+      display: inline-block;
+      float: none;
+      margin-bottom: 0;
+    }
+
+    dt {
+      font-weight: 700;
+      padding: 0 0 .25em 0;
+      margin: 0 4px 0 0;
+      clear: left;
+    }
+
+    dd {
+      padding: 0 0 .25em 0;
+
+      p:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .star-rating {
+    float: none;
+    margin: 10px 0px;
+  }
+}
+}
+ul.cart_list li img {
+width: 72px;
+}
+
+&.widget_shopping_cart,
+.widget_shopping_cart {
+.total {
+  border-top: 1px double @background;
+  padding: 4px 0 0;
+  float: right;
+  strong {
+    min-width: 40px;
+    display: inline-block;
+  }
+
+}
+.buttons {
+  float: right;
+  display: block;
+  clear: both;
+}
+
+.cart_list {
+  li {
+    padding-left: 2em;
+    position: relative;
+    padding-top: 0;
+
+    a.remove {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+.buttons {
+}
+}
+.widget_top_rated_products ul li img {
+width: 64px;
+}
+
+/**
+* Layered nav widget
+*/
+.widget_layered_nav {
+ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none outside;
+
+  li {
+    padding: 0 0 1px;
+    list-style: none;
+
+    a,
+    span {
+      padding: 1px 0;
+    }
+  }
+
+  li.chosen {
+    a {
+      &:before {
+        color: red;
+      }
+    }
+  }
+}
+}
+
+.widget_layered_nav_filters {
+ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none outside;
+  overflow: hidden;
+  zoom: 1;
+
+  li {
+    float: left;
+    padding: 0 1px 1px 0;
+    list-style: none;
+
+    a {
+      text-decoration: none;
+
+      &:before {
+      }
+    }
+  }
+}
+}
+
+/**
+* Price filter widget
+*/
+.widget_price_filter {
+.price_slider {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.price_slider_amount {
+  text-align: right;
+  line-height: 2.4;
+  font-size: 0.8751em;
+  .button {
+	  margin-top: 0px;
+      border-radius: 15px;
+    font-size: 1.15em;
+  }
+  .price_label {
+	  .title-font;
+  }
+
+  .button {
+    float: left;
+  }
+}
+
+.ui-slider {
+  position: relative;
+  text-align: left;
+  margin-left: .5em;
+  margin-right: .5em;
+}
+
+.ui-slider .ui-slider-handle {
+  position: absolute;
+  z-index: 2;
+  width: 1em;
+  height: 1em;
+  background-color: @accent;
+  border-radius: 1em;
+  cursor: ew-resize;
+  outline: none;
+  top: -3px;
+
+  //&:last-child {
+  margin-left: -.5em;
+  //}
+}
+
+.ui-slider .ui-slider-range {
+  position: absolute;
+  z-index: 1;
+  font-size: .7em;
+  display: block;
+  border: 0;
+  border-radius: 1em;
+  background-color: darken(@accent,5%);
+}
+
+.price_slider_wrapper .ui-widget-content {
+  border-radius: 1em;
+  background-color: darken(@accent,10%);
+  border: 0;
+}
+
+.ui-slider-horizontal {
+  height: .5em;
+}
+
+.ui-slider-horizontal .ui-slider-range {
+  top: 0;
+  height: 100%;
+}
+
+.ui-slider-horizontal .ui-slider-range-min {
+  left: -1px;
+}
+
+.ui-slider-horizontal .ui-slider-range-max {
+  right: -1px;
+}
+}
+.widget_top_rated_products {
+li a img {
+  width: 72px;
+}
+.star-rating {
+  width: ~"calc( 100% - 100px )";
+}
+}

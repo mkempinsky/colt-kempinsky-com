@@ -1,0 +1,107 @@
+/**
+ * Buttons
+ */
+.woocommerce {
+  a.button,
+  button.button,
+  input.button,
+  #respond input#submit {
+  	border-radius: 0px;
+  	margin-top: 15px;
+  	background-color: @content;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+	box-shadow: none;
+	border: 0px;
+	text-shadow: none;
+	text-transform: uppercase;
+	letter-spacing: .04em;
+	padding: 8px 16px;
+	height: auto;
+	font-weight: 700;
+	line-height: normal;
+    &.loading {
+      opacity: 0.25;
+      padding-right: 2.618em;
+
+      &:after {
+        font-family: "FontAwesome";
+        content: "\f110";
+        margin-left: .53em;
+        vertical-align: bottom;
+        -webkit-animation: spin 2s linear infinite;
+        -moz-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+      }
+    }
+
+    &.added {
+      &:after {
+        font-family: 'FontAwesome';
+        content: "\f00c";
+        margin-left: .53em;
+        vertical-align: bottom;
+      }
+    }
+    
+    &.alt {
+      background-color: @content;
+      color: white;
+      -webkit-font-smoothing: antialiased;
+      box-shadow: none;
+      border: 0px;
+      text-shadow: none;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      padding: 8px 16px;
+      font-weight: 700;
+      &:before {
+	      content: "\f07a";
+	      font-family: "FontAwesome";
+	      margin-right: 10px;
+      }
+
+      &.disabled,
+      &:disabled,
+      &:disabled[disabled],
+      &.disabled:hover,
+      &:disabled:hover,
+      &:disabled[disabled]:hover {
+        background-color: lighten(@content, 10%);
+        color: #ffffff78;
+      }
+    }
+
+    &:disabled,
+    &.disabled,
+    &:disabled[disabled] {
+       background-color: lighten(@content, 10%);
+        color: #ffffff78;
+        cursor: not-allowed;
+    }
+  }
+
+  .cart .button,
+  .cart input.button {
+    float: none;
+  }
+
+  a.added_to_cart {
+	  position: absolute;
+	  bottom: 0;
+	  right: 0;
+	  line-height: 2em;
+    background: #333;
+    color: white;
+    padding: 5px 16px;
+    border-radius: 0px;
+    font-size: 13px;
+    font-weight: bold;
+    &:before {
+	    content: "\f07a";
+	    font-family: "FontAwesome";
+	    position: relative;
+	    font-size: 14px;
+    }
+  }
+}

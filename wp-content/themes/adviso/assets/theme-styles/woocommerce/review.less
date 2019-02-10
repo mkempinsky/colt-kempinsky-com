@@ -1,0 +1,45 @@
+/**
+ *
+ *	WooCommerce Reviews
+ *
+**/
+
+body.woocommerce {
+	#reviews {
+		li {
+			padding: 0px;
+			.comment_container {
+				img {
+					float: left !important;
+					border-radius: 50%;
+				}
+				.comment-text {
+					margin-left: 75px;
+					.star-rating span {
+						&:before {
+							color: #f4cb29;
+						}
+					}
+					p.meta {
+						line-height: 1em;
+						span.woocommerce-review__author {
+							.title-font;
+							font-size: 20px;
+							font-weight: 700;
+						}
+						.verified {
+							color: @content;
+							font-size: 12px;
+						}
+						span.time-ago {
+							color: #aaa;
+							font-size: 12px;
+							font-style: italic;
+							.body-font;
+						}
+					}
+				}
+			}
+		}
+	}
+}

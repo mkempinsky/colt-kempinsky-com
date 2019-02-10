@@ -1,0 +1,151 @@
+/**
+ * Cart page
+ */
+.woocommerce-cart {
+  table.cart {
+    .product-thumbnail {
+      min-width: 100px;
+	  img {
+		  border-radius: 50%;
+	  }
+    }
+
+    img {
+      width: 100px;
+      box-shadow: none;
+    }
+
+    td.actions {
+	    padding: 18px 12px;
+	    button {
+		      margin: 0px;
+	      }
+      .coupon {
+        .input-text {
+          float: left;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          background: @background;
+          border: 1px solid darken( @background, 10% );
+          padding: 6px 6px 8px;
+          border-radius: 0px;
+          margin: 0 4px 0 0;
+          outline: 0;
+          line-height: 1;
+        }
+      }
+    }
+
+    input {
+      margin: 0;
+      vertical-align: middle;
+      line-height: 2em;
+    }
+  }
+
+  .wc-proceed-to-checkout {
+  	overflow: auto;
+    padding: 1em 0;
+
+    a.checkout-button {
+      float: right;
+    }
+  }
+
+  .cart-collaterals {
+    .cross-sells {
+      h2 {
+        font-size: 15px;
+        font-weight: bold;
+      }
+    }
+
+    .woocommerce-shipping-calculator {
+	    
+      .button {
+        float: none;
+        display: inline-block;
+      }
+
+      .shipping-calculator-button {
+        font-weight: lighter;
+        font-size: 12px;
+        .title-font;
+        &:after {
+          /* icon here */
+          content: "\f072";
+          font-family: "FontAwesome";
+          padding-left: 5px;
+          position: relative;
+          top: 2px;
+          font-size: 15px;
+          color: @content;
+        }
+      }
+    }
+
+    .cart_totals {
+      
+      p {
+        small {
+          //color: $content;
+          font-size: 0.83em;
+        }
+      }
+
+      table {
+        border-collapse: separate;
+        margin: 0 0 6px;
+        padding: 0;
+
+        tr:first-child {
+          th,
+          td {
+            border-top: 0;
+          }
+        }
+
+        th {
+          width: 25%;
+        }
+
+        td {
+          padding: 6px 0;
+        }
+
+        td,
+        th {
+          vertical-align: top;
+          border-left: 0;
+          border-right: 0;
+          padding: 6px 10px;
+          line-height: 2em;
+        }
+
+        small {
+          color: @content;
+        }
+
+        select {
+          width: 100%;
+        }
+      }
+
+      .discount td {
+        color: darken(@accent, 40%);
+      }
+    }
+
+    .cross-sells {
+      ul.products {
+        li.product {
+          margin-top: 0;
+          h3 {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}

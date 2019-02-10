@@ -1,0 +1,113 @@
+.error404 {
+  text-align: center;
+  img {
+	  width: 50%;
+  }
+  .page-header h1.page-title {
+    font-weight: bold;
+    border-bottom: none;
+    font-size: 24px;
+
+  }
+  .page-content {
+    margin-top: 0px;
+    label {
+	    width: 50%;
+	    input[type=search] {
+		    width: 100%;
+			.placeholder(fade(@content, 60%), false);
+			padding: 10px;
+			border-radius: 0px;
+			border: solid 2px #eee;
+	    }
+    }
+    input[type=submit]{
+    	background: none;
+		border: 0px;
+		box-shadow: none;
+		text-shadow: none;
+		text-transform: uppercase;
+		letter-spacing: .08em;
+		font-size: 16px;
+		color: @content;
+    }
+    
+    .widgettitle {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: left;
+    }
+    .widget_recent_entries, .widget_categories, .widget_archive {
+      text-align: left;
+      margin-bottom: 100px;
+      ul {
+        list-style: none;
+        margin-left: 0;
+        li {
+          float: none;
+          margin-bottom: 15px;
+          display: inline-block;
+          margin-right: 15px;
+        }
+        li a {
+          display: inline-block;
+          background: darken(@background, 5%);
+          border: solid 1px darken(@background, 10%);
+          padding: 10px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+    .widget_tag_cloud {
+    .tagcloud {
+	    text-align: left;
+	    a {
+		    background: #eee;
+		    border-radius: 20px;
+	      font-size: 14px !important;
+	      font-weight: normal;
+	      color: @top-bar;
+	      padding: 7px 14px;
+	      margin-bottom: 10px;
+	      display: inline-block;
+	      &:hover {
+		      background: #ddd;
+	      }
+	    }
+    }
+  }
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+body.search-no-results {
+	#content {
+		.page-content {
+			form {
+				label {
+					text-align: center;
+					width: 75%;
+					input[type="search"] {
+						width: 100%;
+						border-radius: 0px;
+						line-height: 2em;
+						padding: 10px 5px;
+						border: solid 2px #eee;
+					}
+				}
+				input[type="submit"] {
+					background: none;
+					border: 0px;
+					box-shadow: none;
+					text-shadow: none;
+					text-transform: uppercase;
+					letter-spacing: .08em;
+					font-size: 16px;
+					color: @content;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,39 @@
+/* --------------- pagination ------------ */
+
+.pagination {
+	margin: 20px 0;
+	text-align: center;
+	width: 100%;
+	clear: both;
+	.nav-links {
+		text-align: center;
+	}
+}
+.pagination .page-numbers {
+	padding: 4px 12px;
+	line-height: 20px;
+	text-decoration: none;
+	border-radius: 3px;
+	margin-right: 5px;
+	background-color: @background;
+	display: inline-block;
+	color: #aaa;
+	font-weight: normal;
+	.transition(0.4s all ease);
+	
+
+}
+.pagination {
+	.current, .dots {
+		background: darken(@background, 2%);
+		color: @accent;
+		pointer-events: none;
+	}
+	.current {
+		background: @accent;
+		color: @onaccent;
+		padding: 16px 22px;
+		border-radius: 26px;
+		box-shadow: 0 1px 1.5px 0 rgba(0,0,0,.12), 0 1px 1px 0 rgba(0,0,0,.24);
+	}
+}

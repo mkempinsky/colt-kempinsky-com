@@ -1,0 +1,37 @@
+#colophon {
+  background: darken(@top-bar, 10%);
+  padding: 15px 10px 15px 10px;
+  color: @content;
+  font-size: 13px;
+  text-align: center;
+  .footer-menu {
+    #site-navigation {
+      float: right;
+      font-size: 14px;
+      ul li {
+        ul {
+          display: none;
+        }
+        a {
+          text-decoration: none;
+        }
+      }
+      @media screen and (max-width:991px) {
+        ul {
+          li {
+            a {
+              padding: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .site-info {
+    text-align: left;
+  }
+  a {
+    color: @accent;
+    text-decoration: underline;
+  }
+}

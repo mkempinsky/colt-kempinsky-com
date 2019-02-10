@@ -1,0 +1,436 @@
+/* Globals */
+@-webkit-keyframes constantrotation {
+  from {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    background: red;
+  }
+  to {
+    transform: rotate(36deg);
+    -webkit-transform: rotate(36deg);
+    -moz-transform: rotate(36deg);
+    -ms-transform: rotate(36deg);
+    -o-transform: rotate(36deg);
+    background: blue;
+  }
+}
+@keyframes constantrotation {
+  from {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    background: red;
+  }
+  to {
+    transform: rotate(36deg);
+    -webkit-transform: rotate(36deg);
+    -moz-transform: rotate(36deg);
+    -ms-transform: rotate(36deg);
+    -o-transform: rotate(36deg);
+    background: blue;
+  }
+}
+/*-----------------------
+ Customizer Icon Styles 
+------------------------*/
+.customize-pane-parent > li#accordion-section-adviso_sec_premsupport h3 {
+  display: flex;
+  align-items: center;
+}
+.customize-pane-parent > li#accordion-section-adviso_sec_premsupport h3:before {
+  content: "\f534";
+  font-family: "Dashicons";
+  font-size: 22px;
+  margin-right: 5px;
+}
+/*----------------------------
+Enable Disable Switch Control
+-----------------------------*/
+.enable-disable-switch {
+  position: relative;
+  width: 100px;
+  margin-right: 15px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.enable-disable-switch-inner {
+  width: 200%;
+  margin-left: -100%;
+  -moz-transition: margin 0.3s ease-in 0s;
+  -webkit-transition: margin 0.3s ease-in 0s;
+  -o-transition: margin 0.3s ease-in 0s;
+  transition: margin 0.3s ease-in 0s;
+}
+.enable-disable-switch-inner > div {
+  float: left;
+  position: relative;
+  width: 50%;
+  height: 24px;
+  padding: 0;
+  line-height: 24px;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 700;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.enable-disable-switch-inner .enable-disable-switch-enabled {
+  background-color: #d4d4d4;
+  color: #ffffff;
+}
+.enable-disable-switch-inner .enable-disable-switch-disabled {
+  background-color: #d4d4d4;
+  color: #FFF;
+  text-align: right;
+}
+.enable-disable-switch-switch {
+  font-size: 11px;
+  text-align: center;
+  width: 53px;
+  margin: 0;
+  border: 0 solid #999;
+  border-radius: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.enable-disable-switch-enabled .enable-disable-switch-switch {
+  background: #0073aa;
+  left: 0;
+}
+.enable-disable-switch-disabled .enable-disable-switch-switch {
+  background: #7D7D7D;
+  right: 0;
+}
+.switch-enable .enable-disable-switch-inner {
+  margin-left: 0;
+}
+/* ----------------
+Important Links
+ -----------------*/
+.adviso-important-links {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  background: #f9470f;
+  color: #FFF !important;
+  text-align: center;
+  margin-top: 10px;
+  line-height: 1.2;
+  box-shadow: none;
+  font-style: normal;
+  text-decoration: none;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.adviso-important-links span {
+  line-height: 1;
+}
+.adviso-important-links span.dashicons {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  background: #333;
+}
+.adviso-important-links span.dashicons:before {
+  margin: auto;
+}
+.adviso-important-links span:not(.dashicons) {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: .04em;
+  opacity: .9;
+  margin: auto;
+}
+.adviso-important-links:hover {
+  background: #ff5722;
+}
+/*-------------------
+Enable Disable Switch Control
+-------------------*/
+.enable-disable-switch {
+  position: relative;
+  width: 100px;
+  margin-right: 15px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.enable-disable-switch-inner {
+  width: 200%;
+  margin-left: -100%;
+  -moz-transition: margin 0.3s ease-in 0s;
+  -webkit-transition: margin 0.3s ease-in 0s;
+  -o-transition: margin 0.3s ease-in 0s;
+  transition: margin 0.3s ease-in 0s;
+}
+.enable-disable-switch-inner > div {
+  float: left;
+  position: relative;
+  width: 50%;
+  height: 24px;
+  padding: 0;
+  line-height: 24px;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 700;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.enable-disable-switch-inner .enable-disable-switch-enabled {
+  background-color: #d4d4d4;
+  color: #ffffff;
+}
+.enable-disable-switch-inner .enable-disable-switch-disabled {
+  background-color: #d4d4d4;
+  color: #FFF;
+  text-align: right;
+}
+.enable-disable-switch-switch {
+  font-size: 11px;
+  text-align: center;
+  width: 53px;
+  margin: 0;
+  border: 0 solid #999;
+  border-radius: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.enable-disable-switch-enabled .enable-disable-switch-switch {
+  background: #0073aa;
+  left: 0;
+}
+.enable-disable-switch-disabled .enable-disable-switch-switch {
+  background: #7D7D7D;
+  right: 0;
+}
+.switch-enable .enable-disable-switch-inner {
+  margin-left: 0;
+}
+/* ----------------
+Skins
+ -----------------*/
+.adviso-skin-list li.color-boxes {
+  display: inline-block;
+  margin-right: 6px;
+  border: 4px solid transparent;
+}
+.adviso-skin-list li.skin-active {
+  border: 4px solid #FFF;
+}
+.adviso-skin-list li:hover {
+  border: 4px solid #FFF;
+}
+.customize-control-skins .custom_skin_control {
+  display: inline-block;
+  margin: 0;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 4px;
+  position: relative;
+}
+.customize-control-skins input[type=radio]:checked:before {
+  content: "\f00c" !important;
+  font-family: "FontAwesome";
+  font-weight: 900;
+  text-indent: 0;
+  color: white;
+  position: absolute;
+  font-size: 17px !important;
+  top: 53%;
+  left: 30%;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  background: none;
+  line-height: 0 !important;
+  border-radius: 0;
+}
+/*-----------------
+  Custom Section
+ -----------------*/
+.in-sub-panel #customize-theme-controls .customize-pane-child.current-panel-parent,
+#customize-theme-controls .customize-pane-child.current-section-parent {
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+#accordion-section-adviso_placeholder {
+  pointer-events: none;
+}
+#accordion-section-adviso_placeholder h3 {
+  background-color: #eee !important;
+  color: #ccc !important;
+}
+/*------------------------------------
+  Styling for the Customizer Controls
+-------------------------------------*/
+.sortable {
+  list-style-type: none;
+  margin-top: 20px;
+  padding: 0;
+}
+.sortable div {
+  cursor: move;
+}
+.sortable .repeater-input {
+  background: #ff5722;
+  color: white;
+  text-align: center;
+  padding: 8px 0;
+  font-weight: 700;
+}
+.sortable .disabled .repeater-input {
+  border: dashed 1px #ccc;
+  background: none;
+  color: #aaa;
+}
+.sortable .disabled div {
+  cursor: not-allowed;
+}
+/*------------------
+  Font Size Control
+------------------*/
+.adviso_font_size_control .font-size-buttons {
+  display: flex;
+  display: -inline-flex;
+}
+.adviso_font_size_control .font-size-buttons span.size {
+  float: left;
+  border-radius: 0px;
+}
+.adviso_font_size_control .font-size-buttons span.size[data-value='S'],
+.adviso_font_size_control .font-size-buttons span.size[data-value="12"] {
+  border-radius: 3px 0 0 3px;
+}
+.adviso_font_size_control .font-size-buttons span.size[data-value="XXL"],
+.adviso_font_size_control .font-size-buttons span.size[data-value="20"] {
+  border-radius: 0 3px 3px 0;
+}
+.adviso_font_size_control .font-size-buttons span.size:not([data-value="XXL"], [data-value="20"]) {
+  border-right: 0px;
+}
+.adviso_font_size_control .font-size-buttons .reset_button {
+  margin-left: auto;
+}
+.adviso_font_size_control input[type="radio"] {
+  display: none;
+}
+/*-------------------
+ Font Weight Control
+--------------------*/
+.font-weight-buttons label {
+  margin-right: 10px;
+}
+.font-weight-buttons label input[type=radio] {
+  display: none;
+}
+.font-weight-buttons label input[type=radio]:checked + span {
+  border: 3px solid #555;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+}
+.font-weight-buttons label span {
+  display: inline-block;
+  border: 3px solid #777;
+  padding: 8px 12px;
+}
+.font-weight-buttons label span.weight-300 {
+  font-weight: 300;
+}
+.font-weight-buttons label span.weight-400 {
+  font-weight: 400;
+}
+.font-weight-buttons label span.weight-700 {
+  font-weight: 700;
+}
+/*--------
+  Sorter
+--------*/
+#accordion-section-adviso_sorter {
+  margin-top: 20px;
+}
+#accordion-section-adviso_sorter h3 {
+  background-color: #abcdef;
+}
+/*---------------------------
+ Adviso Plus Upsell Control
+---------------------------*/
+.adviso_button {
+  display: inline-block;
+  width: 100%;
+  border-radius: 0px;
+  background: #ff5722;
+  padding: 10px 14px;
+  color: white;
+  margin-top: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  border-left: solid 4px #555;
+}
+.adviso_button:hover {
+  color: white;
+}
+/*---------------------
+ Adviso Upsell Section
+---------------------*/
+#accordion-section-adviso_plus_header,
+#accordion-section-adviso_plus_posts,
+#accordion-section-adviso_plus_products {
+  pointer-events: none;
+}
+#accordion-section-adviso_plus_header h3,
+#accordion-section-adviso_plus_posts h3,
+#accordion-section-adviso_plus_products h3 {
+  background-color: #ff5722 !important;
+  border-left: solid 4px #555 !important;
+  color: white !important;
+}
+#accordion-section-adviso_plus_header h3:after,
+#accordion-section-adviso_plus_posts h3:after,
+#accordion-section-adviso_plus_products h3:after {
+  display: none;
+}
+.cta-pro {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: .04em;
+}
+.cta-pro span {
+  color: #ff5722;
+}
+.cta-pro a {
+  display: flex !important;
+  display: inline-flex;
+  width: 64%;
+  margin: auto !important;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2px !important;
+}
+.cta-pro a span {
+  padding-top: 2px;
+  padding-right: 2px;
+}
+/*-------------------
+ Image Radio Buttons
+--------------------*/
+.image_radio_button_control .radio-button-label > input {
+  display: none;
+}
+.image_radio_button_control .radio-button-label > input:checked + img {
+  border: 3px solid #2885bb;
+}
+.image_radio_button_control .radio-button-label > img {
+  width: 45%;
+  vertical-align: middle;
+  margin-right: 3px;
+}

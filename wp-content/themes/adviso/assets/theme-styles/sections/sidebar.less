@@ -1,0 +1,141 @@
+#secondary, #footer-sidebar {
+	display: inline-block;
+  aside {
+    padding: 10px;
+  }
+  h3.widget-title {
+    font-weight: bold;
+    background: @s-accent;
+    padding: 10px;
+    color: @onaccent;
+    font-size: 17px;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    word-break: break-all;
+    display: inline-block;
+    text-transform: uppercase;
+    position: relative;
+  }
+  .widget {
+    ul {
+      font-size: 13px;
+      margin-left: 20px;
+      li {
+	      font-size: 16px;
+        list-style: none;
+        padding-top: 32px;
+        &:last-child {
+          border-bottom: none;
+        }
+        &:before {
+	        content: "\f054";
+	      font-family: "FontAwesome";
+	      color: lighten(@accent,1%);
+	      font-size: 14px;
+	      margin-right: 15px;
+	      .transition( 0.4s all ease );
+	      display: inline-block;
+        }
+      }
+    }
+  }
+  .widget_search {
+    margin-bottom: 20px;
+    label {
+      width: 100%;
+    }
+    input[type=search] {
+      background: white;
+      border: solid 2px #eee;
+      border-radius: 0px;
+      padding: 15px 5px;
+      font-size: 15px;
+      outline: none;
+      width: 100%;
+    }
+  }
+  .search-submit {
+    display: none;
+  }
+  /* Some Styling for Default WordPress Widgets */
+  .widget_recent_entries, .widget_recent_comments, .widget_categories, .widget_pages, .widget_archive, .widget_meta, .widget_nav_menu {
+    ul li:before {
+      
+
+    }
+  }
+  .widget_nav_menu {
+	  li {
+		  white-space: normal;
+	  }
+  }
+  .widget_archive, .widget_categories, .widget_text {
+	  select {
+		  width: 100%;
+		  height: 3em;
+	  }
+  }
+  .widget_tag_cloud {
+    .tagcloud a {
+	    background: #eee;
+	    border-radius: 20px;
+      font-size: 14px !important;
+      font-weight: normal;
+      color: @top-bar;
+      padding: 7px 14px;
+      margin-bottom: 10px;
+      display: inline-block;
+      &:hover {
+	      background: #ddd;
+      }
+    }
+  }
+
+  .tagcloud a {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .tagcloud a:hover, .tagcloud a:focus, .tagcloud a:active {
+    -webkit-animation-name: hvr-pulse-grow;
+    animation-name: hvr-pulse-grow;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+  }
+  .widget_cleanpress_rp {
+    li.rp-item {
+      overflow: auto;
+      clear: both;
+      display: block;
+      padding: 8px 0px;
+      font-size: 14px;
+    }
+    .rp-thumb {
+      width: 62px;
+      float: left;
+      display: inline-block;
+      margin-right: 6px;
+      img {
+        border-right: solid 2px @accent;
+      }
+    }
+    .rp-date {
+      color: lighten(@accent,10%);
+      font-size: 11px;
+      margin-top: 3px;
+
+    }
+  }
+}

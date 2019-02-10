@@ -1,0 +1,206 @@
+/**
+ * Checkout
+ */
+.woocommerce-checkout {
+  .checkout {
+    .col-2 {
+
+      .notes {
+        clear: left;
+      }
+
+      .form-row-first {
+        clear: left;
+      }
+    }
+
+    .create-account small {
+      font-size: 11px;
+      //color: $subtext;
+      font-weight: normal;
+    }
+
+    div.shipping-address {
+      padding: 0;
+      clear: left;
+      width: 100%;
+    }
+
+    .shipping_address {
+      clear: both;
+    }
+  }
+
+  #payment {
+    background: @background;
+    border-radius: 5px;
+
+    ul.payment_methods {
+      text-align: left;
+      padding: 1em;
+      border-bottom: 1px solid darken( @background, 10% );
+      margin: 0;
+      list-style: none outside;
+
+      li {
+        line-height: 4;
+        text-align: left;
+        margin: 0;
+        font-weight: normal;
+        
+        label {
+	        .title-font;
+        }
+
+        input {
+          margin: 0 1em 0 0;
+        }
+
+        img {
+          vertical-align: middle;
+          margin: -2px 0 0 .5em;
+          padding: 0;
+          position: relative;
+          box-shadow: none;
+        }
+
+        img + img {
+          margin-left: 2px;
+        }
+      }
+    }
+
+    div.form-row {
+      padding: 1em;
+    }
+
+    div.payment_box {
+      position: relative;
+      width: 96%;
+      padding: 1em 4%;
+      margin: 1em 0 1em 0;
+      font-size: 0.92em;
+      font-weight: 300;
+      border-radius: 0px;
+      background-color: darken( @background, 5% );
+      color: darken( @background, 50%);
+
+      input.input-text, textarea {
+        border-color: darken( @background, 15% );
+        border-top-color: darken( @background, 20% );
+        .placeholder(@content,false);
+      }
+
+
+      .wc-credit-card-form-card-number,
+      .wc-credit-card-form-card-expiry,
+      .wc-credit-card-form-card-cvc {
+        font-size: 1.5em;
+        padding: 8px;
+        background-repeat: no-repeat;
+        background-position: right;
+
+        &.visa {
+          background-image: url(../images/icons/credit-cards/visa.png);
+        }
+
+        &.mastercard {
+          background-image: url(../images/icons/credit-cards/mastercard.png);
+        }
+
+        &.laser {
+          background-image: url(../images/icons/credit-cards/laser.png);
+        }
+
+        &.dinersclub {
+          background-image: url(../images/icons/credit-cards/diners.png);
+        }
+
+        &.maestro {
+          background-image: url(../images/icons/credit-cards/maestro.png);
+        }
+
+        &.jcb {
+          background-image: url(../images/icons/credit-cards/jcb.png);
+        }
+
+        &.amex {
+          background-image: url(../images/icons/credit-cards/amex.png);
+        }
+        &.discover {
+          background-image: url(../images/icons/credit-cards/discover.png);
+        }
+      }
+
+      span.help {
+        font-size: .857em;
+        color: @content;
+        font-weight: normal;
+      }
+
+      .form-row {
+        margin: 0 0 1em;
+      }
+
+      p:last-child {
+        margin-bottom: 0;
+      }
+
+      &:after {
+        content: "";
+        display: block;
+        border: 8px solid darken( @background, 5% ); /* arrow size / color */
+        border-right-color: transparent;
+        border-left-color: transparent;
+        border-top-color: transparent;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        margin: -1em 0 0 2em;
+      }
+    }
+
+
+    .payment_method_paypal {
+      .about_paypal {
+        float: right;
+        line-height: 52px;
+        font-size: 0.83em;
+        margin-left: 5px;
+      }
+
+      img {
+        max-height: 52px;
+        vertical-align: middle;
+      }
+    }
+  }
+  #place_order {
+    background: darken(@background,10%);
+    font-weight: bold;
+  }
+  .select2-drop-active, .select2-drop {
+    border: solid 1px darken(@background,10px);
+    background: @background;
+  }
+  .woocommerce-info {
+    background: darken( @background, 5%);
+    color: #333;
+    a {
+	    color: @s-accent;
+	    font-weight: 700;
+    }
+    &:before {
+      color: @accent;
+    }
+  }
+  .woocommerce-checkout-payment {
+    background: lighten(@accent, 60%) !important;
+    .woocommerce-info {
+      background: none;
+      &:before {
+        color: @accent;
+      }
+    }
+  }
+}
